@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED3C5A0E20751DCB00B2B773 /* SWQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3C5A0D20751DCB00B2B773 /* SWQRCodeManager.m */; };
+		EDA2D4E82079AAAE005DF534 /* SWScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D4E72079AAAE005DF534 /* SWScannerView.m */; };
+		EDA2D4EA2079BA94005DF534 /* SWQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D4E92079BA94005DF534 /* SWQRCode.bundle */; };
+		EDF71A7C2074C71A00543245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF71A7B2074C71A00543245 /* AppDelegate.m */; };
+		EDF71A7F2074C71A00543245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF71A7E2074C71A00543245 /* ViewController.m */; };
+		EDF71A822074C71A00543245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF71A802074C71A00543245 /* Main.storyboard */; };
+		EDF71A842074C71A00543245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF71A832074C71A00543245 /* Assets.xcassets */; };
+		EDF71A872074C71A00543245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF71A852074C71A00543245 /* LaunchScreen.storyboard */; };
+		EDF71A8A2074C71A00543245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF71A892074C71A00543245 /* main.m */; };
+		EDF71A982074C72B00543245 /* SWQRCodeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF71A922074C72B00543245 /* SWQRCodeConfig.m */; };
+		EDF71A992074C72B00543245 /* SWQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF71A952074C72B00543245 /* SWQRCodeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED3C5A0C20751DCB00B2B773 /* SWQRCodeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWQRCodeManager.h; sourceTree = "<group>"; };
+		ED3C5A0D20751DCB00B2B773 /* SWQRCodeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWQRCodeManager.m; sourceTree = "<group>"; };
+		EDA2D4E62079AAAE005DF534 /* SWScannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWScannerView.h; sourceTree = "<group>"; };
+		EDA2D4E72079AAAE005DF534 /* SWScannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWScannerView.m; sourceTree = "<group>"; };
+		EDA2D4E92079BA94005DF534 /* SWQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SWQRCode.bundle; sourceTree = "<group>"; };
+		EDF71A772074C71A00543245 /* SWQRCode_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWQRCode_Objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF71A7A2074C71A00543245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDF71A7B2074C71A00543245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDF71A7D2074C71A00543245 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDF71A7E2074C71A00543245 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDF71A812074C71A00543245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF71A832074C71A00543245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF71A862074C71A00543245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDF71A882074C71A00543245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF71A892074C71A00543245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDF71A922074C72B00543245 /* SWQRCodeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQRCodeConfig.m; sourceTree = "<group>"; };
+		EDF71A932074C72B00543245 /* SWQRCodeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQRCodeConfig.h; sourceTree = "<group>"; };
+		EDF71A942074C72B00543245 /* SWQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQRCode.h; sourceTree = "<group>"; };
+		EDF71A952074C72B00543245 /* SWQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQRCodeViewController.m; sourceTree = "<group>"; };
+		EDF71A972074C72B00543245 /* SWQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQRCodeViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF71A742074C71A00543245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDF71A6E2074C71A00543245 = {
+			isa = PBXGroup;
+			children = (
+				EDF71A902074C72B00543245 /* SWQRCode */,
+				EDF71A792074C71A00543245 /* SWQRCode_Objc */,
+				EDF71A782074C71A00543245 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF71A782074C71A00543245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF71A772074C71A00543245 /* SWQRCode_Objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF71A792074C71A00543245 /* SWQRCode_Objc */ = {
+			isa = PBXGroup;
+			children = (
+				EDF71A7A2074C71A00543245 /* AppDelegate.h */,
+				EDF71A7B2074C71A00543245 /* AppDelegate.m */,
+				EDF71A7D2074C71A00543245 /* ViewController.h */,
+				EDF71A7E2074C71A00543245 /* ViewController.m */,
+				EDF71A802074C71A00543245 /* Main.storyboard */,
+				EDF71A832074C71A00543245 /* Assets.xcassets */,
+				EDF71A852074C71A00543245 /* LaunchScreen.storyboard */,
+				EDF71A882074C71A00543245 /* Info.plist */,
+				EDF71A892074C71A00543245 /* main.m */,
+			);
+			path = SWQRCode_Objc;
+			sourceTree = "<group>";
+		};
+		EDF71A902074C72B00543245 /* SWQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				EDF71A972074C72B00543245 /* SWQRCodeViewController.h */,
+				EDF71A952074C72B00543245 /* SWQRCodeViewController.m */,
+				EDF71A912074C72B00543245 /* Config */,
+				EDF71A962074C72B00543245 /* View */,
+				EDA2D4E92079BA94005DF534 /* SWQRCode.bundle */,
+			);
+			path = SWQRCode;
+			sourceTree = "<group>";
+		};
+		EDF71A912074C72B00543245 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EDF71A942074C72B00543245 /* SWQRCode.h */,
+				EDF71A932074C72B00543245 /* SWQRCodeConfig.h */,
+				EDF71A922074C72B00543245 /* SWQRCodeConfig.m */,
+				ED3C5A0C20751DCB00B2B773 /* SWQRCodeManager.h */,
+				ED3C5A0D20751DCB00B2B773 /* SWQRCodeManager.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EDF71A962074C72B00543245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDA2D4E62079AAAE005DF534 /* SWScannerView.h */,
+				EDA2D4E72079AAAE005DF534 /* SWScannerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF71A762074C71A00543245 /* SWQRCode_Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF71A8D2074C71A00543245 /* Build configuration list for PBXNativeTarget "SWQRCode_Objc" */;
+			buildPhases = (
+				EDF71A732074C71A00543245 /* Sources */,
+				EDF71A742074C71A00543245 /* Frameworks */,
+				EDF71A752074C71A00543245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWQRCode_Objc;
+			productName = SWQRCode_Objc;
+			productReference = EDF71A772074C71A00543245 /* SWQRCode_Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF71A6F2074C71A00543245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = selwyn;
+				TargetAttributes = {
+					EDF71A762074C71A00543245 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EDF71A722074C71A00543245 /* Build configuration list for PBXProject "SWQRCode_Objc" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF71A6E2074C71A00543245;
+			productRefGroup = EDF71A782074C71A00543245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF71A762074C71A00543245 /* SWQRCode_Objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF71A752074C71A00543245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF71A872074C71A00543245 /* LaunchScreen.storyboard in Resources */,
+				EDF71A842074C71A00543245 /* Assets.xcassets in Resources */,
+				EDF71A822074C71A00543245 /* Main.storyboard in Resources */,
+				EDA2D4EA2079BA94005DF534 /* SWQRCode.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF71A732074C71A00543245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF71A7F2074C71A00543245 /* ViewController.m in Sources */,
+				EDA2D4E82079AAAE005DF534 /* SWScannerView.m in Sources */,
+				EDF71A982074C72B00543245 /* SWQRCodeConfig.m in Sources */,
+				EDF71A8A2074C71A00543245 /* main.m in Sources */,
+				EDF71A7C2074C71A00543245 /* AppDelegate.m in Sources */,
+				ED3C5A0E20751DCB00B2B773 /* SWQRCodeManager.m in Sources */,
+				EDF71A992074C72B00543245 /* SWQRCodeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDF71A802074C71A00543245 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF71A812074C71A00543245 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDF71A852074C71A00543245 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF71A862074C71A00543245 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF71A8B2074C71A00543245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDF71A8C2074C71A00543245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDF71A8E2074C71A00543245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WJ4BEE5HT;
+				INFOPLIST_FILE = SWQRCode_Objc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "selwynbee.SWQRCode-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF71A8F2074C71A00543245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WJ4BEE5HT;
+				INFOPLIST_FILE = SWQRCode_Objc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "selwynbee.SWQRCode-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF71A722074C71A00543245 /* Build configuration list for PBXProject "SWQRCode_Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF71A8B2074C71A00543245 /* Debug */,
+				EDF71A8C2074C71A00543245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF71A8D2074C71A00543245 /* Build configuration list for PBXNativeTarget "SWQRCode_Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF71A8E2074C71A00543245 /* Debug */,
+				EDF71A8F2074C71A00543245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF71A6F2074C71A00543245 /* Project object */;
+}
