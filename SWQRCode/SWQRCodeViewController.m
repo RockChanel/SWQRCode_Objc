@@ -110,18 +110,19 @@
 #pragma mark -- AVCaptureMetadataOutputObjectsDelegate
 - (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
     
+    // 获取扫一扫结果
     if (metadataObjects && metadataObjects.count > 0) {
         
         [self pauseScanning];
         AVMetadataMachineReadableCodeObject *metadataObject = metadataObjects[0];
         NSString *stringValue = metadataObject.stringValue;
         
-        NSLog(@"stringValue === %@", stringValue);
+        [self sw_handleWithValue:stringValue];
     }
 }
 
 #pragma mark -- AVCaptureVideoDataOutputSampleBufferDelegate
-/** 此方法会实时监听光线亮度，故实时调用 */
+/** 此方法会实时监听亮度值 */
 - (void)captureOutput:(AVCaptureOutput *)output didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     
     CFDictionaryRef metadataDict = CMCopyDictionaryOfAttachments(NULL,sampleBuffer, kCMAttachmentMode_ShouldPropagate);
@@ -129,7 +130,7 @@
     CFRelease(metadataDict);
     NSDictionary *exifMetadata = [[metadata objectForKey:(NSString *)kCGImagePropertyExifDictionary] mutableCopy];
     
-    //brightnessValue 基本处于 -5.0 ~ 5.0 之间
+    // 亮度值
     float brightnessValue = [[exifMetadata objectForKey:(NSString *)kCGImagePropertyExifBrightnessValue] floatValue];
     
     if (![self.scannerView sw_flashlightOn]) {
@@ -154,7 +155,21 @@
 #pragma mark -- UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
+    UIImage *pickImage = info[UIImagePickerControllerOriginalImage];
+    CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{CIDetectorAccuracy: CIDetectorAccuracyHigh}];
+    // 获取选择图片中识别结果
+    NSArray *features = [detector featuresInImage:[CIImage imageWithData:UIImagePNGRepresentation(pickImage)]];
     
+    [picker dismissViewControllerAnimated:YES completion:^{
+        if (features.count > 0) {
+            CIQRCodeFeature *feature = features[0];
+            NSString *stringValue = feature.messageString;
+            [self sw_handleWithValue:stringValue];
+        }
+        else {
+            [self sw_didReadFromAlbumFailed];
+        }
+    }];
 }
 
 /** 恢复扫一扫功能 */
@@ -173,6 +188,23 @@
         [self.scannerView sw_pauseScannerLineAnimation];
     }
 }
+
+#pragma mark -- 扫一扫API
+/**
+ 处理扫一扫结果
+ @param value 扫描结果
+ */
+- (void)sw_handleWithValue:(NSString *)value {
+    NSLog(@"sw_handleWithValue === %@", value);
+}
+
+/**
+ 相册选取图片无法读取数据
+ */
+- (void)sw_didReadFromAlbumFailed {
+    NSLog(@"sw_didReadFromAlbumFailed");
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
