@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, SWScannerType) {
 @property (nonatomic, strong) UIColor *scannerCornerColor;
 /** 边框颜色 */
 @property (nonatomic, strong) UIColor *scannerBorderColor;
-/** 指示器 */
+/** 指示器风格 */
 @property (nonatomic, assign) UIActivityIndicatorViewStyle indicatorViewStyle;
 
 @end
