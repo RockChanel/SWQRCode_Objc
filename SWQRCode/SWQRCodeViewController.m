@@ -19,6 +19,10 @@
 
 @implementation SWQRCodeViewController
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (SWScannerView *)scannerView
 {
     if (!_scannerView) {
@@ -31,6 +35,15 @@
     [super viewDidLoad];
     self.navigationItem.title = [SWQRCodeManager sw_navigationItemTitleWithType:self.codeConfig.scannerType];
     [self _setupUI];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appWillResignActive:)
+                                                 name:UIApplicationWillResignActiveNotification
+                                               object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -170,6 +183,16 @@
             [self sw_didReadFromAlbumFailed];
         }
     }];
+}
+
+#pragma mark -- App 从后台进入前台
+- (void)appDidBecomeActive:(NSNotification *)notify {
+    [self resumeScanning];
+}
+
+#pragma mark -- App 从前台进入后台
+- (void)appWillResignActive:(NSNotification *)notify {
+    [self pauseScanning];
 }
 
 /** 恢复扫一扫功能 */
