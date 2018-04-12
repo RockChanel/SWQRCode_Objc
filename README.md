@@ -4,6 +4,8 @@
 
 简书地址：[iOS 高仿微信扫一扫](https://www.jianshu.com/p/1fc34089adf5)
 
+Swift版本地址：[SWQRCode swift 版本](https://github.com/RockChanel/SWQRCode_Swift)
+
 `SWQRCode_Objc` 为 `SWQRCode` objecive-c 版本，高仿微信扫一扫功能，包括`二维码/条码识别、相册图片二维码/条码识别、手电筒功能`等，请使用真机进行测试。
 
 `SWQRCode_Objc` 舍弃了 `NSTimer` 而采用 `CABasicAnimation` 实现扫一扫动画效果。
