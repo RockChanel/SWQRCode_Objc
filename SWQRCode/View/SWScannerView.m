@@ -151,7 +151,7 @@ static char FLASHLIGHT_ON;  /** 手电筒开关状态绑定标识符 */
     [SWQRCodeManager sw_FlashlightOn:on];
     self.flashlightLab.text = on ? @"轻触关闭":@"轻触照亮";
     self.flashlightBtn.selected = on;
-    objc_setAssociatedObject(self, &FLASHLIGHT_ON, @(on), OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, &FLASHLIGHT_ON, @(on), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 /** 获取手电筒当前开关状态 */
