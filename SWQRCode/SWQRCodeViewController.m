@@ -86,6 +86,9 @@
     
     AVCaptureMetadataOutput *metadataOutput = [[AVCaptureMetadataOutput alloc] init];
     [metadataOutput setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
+    if (self.codeConfig.scannerArea == SWScannerAreaDefault) {
+        metadataOutput.rectOfInterest = CGRectMake([self.scannerView scanner_y]/self.view.frame.size.height, [self.scannerView scanner_x]/self.view.frame.size.width, [self.scannerView scanner_width]/self.view.frame.size.height, [self.scannerView scanner_width]/self.view.frame.size.width);
+    }
     
     AVCaptureVideoDataOutput *videoDataOutput = [[AVCaptureVideoDataOutput alloc] init];
     [videoDataOutput setSampleBufferDelegate:self queue:dispatch_get_main_queue()];
@@ -227,7 +230,6 @@
 - (void)sw_didReadFromAlbumFailed {
     NSLog(@"sw_didReadFromAlbumFailed");
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

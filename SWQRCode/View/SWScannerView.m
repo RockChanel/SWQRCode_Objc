@@ -224,6 +224,18 @@ static char FLASHLIGHT_ON;  /** 手电筒开关状态绑定标识符 */
     }
 }
 
+- (CGFloat)scanner_x {
+    return Scanner_X;
+}
+
+- (CGFloat)scanner_y {
+    return Scanner_Y;
+}
+
+- (CGFloat)scanner_width {
+    return Scanner_Width;
+}
+
 /** 扫描线条 */
 - (UIImageView *)scannerLine {
     if (!_scannerLine) {

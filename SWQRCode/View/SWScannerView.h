@@ -24,6 +24,10 @@
 /** 移除指示器 */
 - (void)sw_removeActivityIndicator;
 
+- (CGFloat)scanner_x;
+- (CGFloat)scanner_y;
+- (CGFloat)scanner_width;
+
 /**
  显示手电筒
  @param animated 是否附带动画

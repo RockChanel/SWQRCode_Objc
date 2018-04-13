@@ -28,10 +28,24 @@ typedef NS_ENUM(NSInteger, SWScannerType) {
     SWScannerTypeBoth,
 };
 
+
+/**
+ 扫描区域
+
+ - SWScannerAreaDefault: 扫描框以内
+ - SWScannerAreaFullScreen: 全屏
+ */
+typedef NS_ENUM(NSInteger, SWScannerArea) {
+    SWScannerAreaDefault,
+    SWScannerAreaFullScreen,
+};
+
 @interface SWQRCodeConfig : NSObject
 
 /** 类型 */
 @property (nonatomic, assign) SWScannerType scannerType;
+/** 扫描区域 */
+@property (nonatomic, assign) SWScannerArea scannerArea;
 /** 棱角颜色 */
 @property (nonatomic, strong) UIColor *scannerCornerColor;
 /** 边框颜色 */
