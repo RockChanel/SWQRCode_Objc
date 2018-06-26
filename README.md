@@ -1,6 +1,6 @@
 # SWQRCode_Objc
 
-![image](https://github.com/RockChanel/SWGIF/blob/master/SWQRCode.gif)
+![image](https://github.com/RockChanel/SWGIF/blob/master/SWQRCode/SWQRCode.gif)
 
 简书地址：[iOS 高仿微信扫一扫](https://www.jianshu.com/p/1fc34089adf5)
 
